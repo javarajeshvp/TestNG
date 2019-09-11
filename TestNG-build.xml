@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1">
+	<test name="test1">
+		<groups>
+			<define name="all">
+				<include name="fast" />
+				<include name="slow" />
+			</define>
+			<define name="slower">
+				<include name="slow" />
+			</define>
+			<define name="faster">
+				<include name="fast" />
+			</define>
+			<run>
+				<include name="faster" />
+			</run>
+		</groups>
+		<classes>
+			<class name="org.testng.example.TestNG" />
+		</classes>
+	</test>
+	<test name="test2">
+		<classes>
+			<class name="org.testng.example.TestNG2" />
+		</classes>
+	</test>
+</suite>
