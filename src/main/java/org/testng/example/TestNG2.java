@@ -4,26 +4,26 @@ package org.testng.example;
 import org.testng.annotations.Test;
 
 @Test
-public class TestNG {
+public class TestNG2 {
 
-	@Test(priority = 2, description = "Learning Test NG ",groups = { "fast" })
+	@Test(priority = 2, description = "Learning Test NG ")
 	public void test2() {
-		System.out.println("Test case : 2 ");
+		System.out.print("Test case : 2 ");
 	}
 
-	@Test(priority = 3,groups = { "fast" })
+	@Test(priority = 3)
 	public void helloTest() {
-		System.out.println("Test case : 3");
+		System.out.print("Test case : 3");
 	}
 
-	@Test(priority = 4,groups = { "fast" })
+	@Test(priority = 4)
 	public void firstTest() {
 		System.out.print("Test case : 1");
 	}
 
-	@Test(priority = 1, description = "Learning Test NG 2",groups = { "slow" })
+	@Test(priority = 1, description = "Learning Test NG 2")
 	public void myTest() {
-		System.out.println("Test case : 4 ");
+		System.out.print("Test case : 4 ");
 	}
 	
 	 
